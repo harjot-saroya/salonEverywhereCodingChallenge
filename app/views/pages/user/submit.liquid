@@ -1,0 +1,9 @@
+---
+method: post
+---
+{%- assign list_id = context.params.slug3 -%}
+{%- assign content = context.params.content -%}
+<script>console.log({{ content }});</script>
+{% graphql result = 'list/create', list_id: list_id, content: content %}
+
+<script>window.location.href = '/admin/redir/' </script>

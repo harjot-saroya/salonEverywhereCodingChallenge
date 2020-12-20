@@ -1,0 +1,101 @@
+{%- assign id = context.params.title -%}
+
+<h1>COVID-19 SCREENING QUESTIONS</h1>
+<form method="POST"
+    action="/user/submit/{{ context.params.slug3 }}"
+    x-show="open === true"
+    class="w-full flex mt-4">
+<div>
+
+        <label for="q1">New or worsening cough:   </label>
+        <p>
+        <input type="radio" name="q1" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q1"> No </input>
+        </p>
+
+        <label for="q2">Shortness of breath:   </label>
+        <p>
+        <input type="radio" name="q2" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q2"> No </input>
+        </p>
+
+        <label for="q3">Sore throat:   </label>
+        <p>
+        <input type="radio" name="q3" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q3"> No </input>
+        </p>
+
+        <label for="q4">Runny nose, sneezing or nasal congestion (in absence of underlying reasons for symptoms such as seasonal allergies and post nasal drip):   </label>
+        <p>
+        <input type="radio" name="q4" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q4"> No </input>
+        </p>
+
+        <label for="q5">Hoarse voice:   </label>
+        <p>
+        <input type="radio" name="q5" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q5"> No </input>
+        </p>
+
+        <label for="q6">Difficulty swallowing:   </label>
+        <p>
+        <input type="radio" name="q6" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q6"> No </input>
+        </p>
+
+        <label for="q7">New smell or taste disorder(s):   </label>
+        <p>
+        <input type="radio" name="q7" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q7"> No </input>
+        </p>
+
+        <label for="q8">Nausea/vomiting, diarrhea, abdominal pain:   </label>
+        <p>
+        <input type="radio" name="q8" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q8"> No </input>
+        </p>
+
+        <label for="q9">Unexplained fatigue/malaise:   </label>
+        <p>
+        <input type="radio" name="q9" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q9"> No </input>
+        </p>
+
+        <label for="q10">Chills:   </label>
+        <p>
+        <input type="radio" name="q10" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q10"> No </input>
+        </p>
+
+        <label for="q11">Headache:   </label>
+        <p>
+        <input type="radio" name="q11" checked> Yes </input>
+        </p>
+        <p>
+        <input type="radio" name="q11"> No </input>
+        </p>
+        <button type="submit>Submit</button>
+        <button class="button-primary ml-2" onclick = "">Submit</button>
+    </div>
+</form>
+

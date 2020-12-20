@@ -1,0 +1,26 @@
+name: questions
+properties:
+  - name: id
+    type: string
+  - name: q1
+    type: string
+  - name: q2
+    type: string
+  - name: q3
+    type: string
+  - name: q4
+    type: string
+  - name: q5
+    type: string
+  - name: q6
+    type: string
+  - name: q7
+    type: string
+  - name: q8
+    type: string
+  - name: q9
+    type: string
+  - name: q10
+    type: string
+  - name: q11
+    type: string

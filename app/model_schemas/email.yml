@@ -1,0 +1,4 @@
+name: contact
+properties:
+  - name: email
+    type: string

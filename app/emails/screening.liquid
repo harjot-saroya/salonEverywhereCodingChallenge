@@ -1,0 +1,29 @@
+---
+to: {{data.email}}
+delay: 0
+enabled: true
+trigger_condition: true
+from: no-reply@example.com
+reply_to: no-reply@example.com
+cc:
+bcc:
+subject: "Covid Screening questions"
+layout_path: mailer
+---
+<div style="background-color:gray;padding:3em">
+    <div style="border-radius:15px;border-style:solid">
+        <div style="background-color:white;margin:0;border-top-left-radius:15px;border-top-right-radius:15px;text-align:center;padding-top:2px;">
+        <h1>SalonEverywhere</h1>
+        </div>
+        <div style="background-color:gray">
+            <div style="text-align:center">
+                <h2>Hello {{data.email}}</h2>
+                <p>Please visit the following link to access our screening tool</p>
+            </div>
+            
+            <div style="text-align:center;border-radius: 5px;padding:1em;background-color:beige;margin:1em; onclick="location.href='https://{{ context.location.host }}/user/end/{{data.email}}'">
+                <a style="text-decoration:none;" href="https://{{ context.location.host }}/user/end/{{data.email}}">Click Here</a>
+            </div>
+        </div>
+    </div>
+</div>

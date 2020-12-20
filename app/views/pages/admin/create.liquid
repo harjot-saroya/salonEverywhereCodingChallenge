@@ -1,0 +1,11 @@
+---
+method: post
+---
+{%- assign email = context.params.email -%}
+
+{% assign list = result | fetch: "model_create" %}
+
+{% graphql notify = 'emails/screening', data: context.params %}
+
+<script>window.location.href = '/admin/redir/' </script>
+

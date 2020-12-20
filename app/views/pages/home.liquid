@@ -1,0 +1,13 @@
+{% graphql lists = 'index' | fetch: 'models' | fetch: 'results' %}
+
+  <div>
+
+    <h1> Please enter your client’s email address here: </h1>
+    <form
+      action="/admin/create"
+      method="POST"
+      x-show="open === true">
+      <input type="text" name="email" email=value placeholder="test@something.com" required>
+      <button class="button-primary">Send</button>
+    </form>
+  </div>

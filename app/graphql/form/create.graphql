@@ -1,0 +1,23 @@
+mutation create($list_id: String!, $content: String!) {
+  model_create(
+    model: {
+      model_schema_name: "list"
+      properties: [
+        { name: "id", value: $list_id }
+        { name: "q1", value: $content }
+        { name: "q2", value: $content }
+        { name: "q3", value: $content }
+        { name: "q4", value: $content }
+        { name: "q5", value: $content }
+        { name: "q6", value: $content }
+        { name: "q7", value: $content }
+        { name: "q8", value: $content }
+        { name: "q9", value: $content }
+        { name: "q10", value: $content }
+        { name: "q11", value: $content }
+      ]
+    }
+  ) {
+    id
+  }
+}
